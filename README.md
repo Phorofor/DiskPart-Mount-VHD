@@ -2,7 +2,7 @@
 
 Batch scripts that allow mounting of multiple VHDs without having to manually browse to a Virtual Hard Disk's location every time and double-click each file then approve each UAC prompt. This can be a slight problem with external drives as they can detach VHDs and also with Storage Pools being stored across individual VHD files on external drives if the disks happen to be inactive.
 
-I couldn't find a good example of using diskpart script to mount multiple VHDs, so I happened to figure it out here. This should serve as an example of utilising diskpart to mount more than one VHD, which looks relatively simple.
+I couldn't find an example of using a diskpart script to mount multiple VHDs, so I happened to figure it out. This should serve as an example of utilising diskpart to mount more than one VHD, which looks relatively simple.
 
 ## Usage
 You must modify the "DiskPart Mount.txt" and "DiskPart Unmount and Offline.txt" scripts to suit your setup. Ensure you check your file paths thoroughly.
