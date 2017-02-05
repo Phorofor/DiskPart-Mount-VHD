@@ -1,0 +1,23 @@
+REM LABEL: VHD Pool Segment
+SELECT VDISK FILE="H:\210 GB Part.vhdx"
+DETACH VDISK NOERR
+
+REM LABEL: VHD Pool Segment
+SELECT VDISK FILE="I:\Pool.vhdx"
+DETACH VDISK NOERR
+
+REM LABEL: Virtual Hard Disk
+SELECT VDISK FILE="H:\121G VIRTUAL.vhd"
+DETACH VDISK NOERR
+
+REM LABEL: Virtual Hard Disk
+REM SELECT VDISK FILE="E:\Virtual Storage.vhdx"
+REM DETACH VDISK NOERR
+
+REM COMMENT: Make disks OFFLINE
+REM COMMENT: Use this if you want your drives to stop being active and stop programs from being able to access them, otherwise just comment it out.
+SELECT DISK 1
+OFFLINE DISK
+
+SELECT DISK 2
+OFFLINE DISK
